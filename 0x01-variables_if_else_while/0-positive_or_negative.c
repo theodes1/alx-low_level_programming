@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Responsible for the execution and termination of the program.
- * 
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
