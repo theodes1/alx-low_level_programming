@@ -15,7 +15,7 @@ int main(void)
 /**
  * natural - prints sum of all multiples of 3 & 5 less than 1024
  *
- * Return: void 
+ * Return: void
  */
 void natural(void)
 {

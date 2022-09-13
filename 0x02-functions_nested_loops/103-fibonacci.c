@@ -23,7 +23,7 @@ void fibonacci_sum(void)
 
 	for (s = 0, a = 1, b = 2; a < 4000000;)
 	{
-		if (!(a% 2))
+		if (!(a % 2))
 			s += a;
 		c = a;
 		a = b;
