@@ -1,1 +1,4 @@
-void print_alphabet(void);
+#ifndef MAIN_H_
+#define MAIN_H_
+
+int _putchar(char c);
