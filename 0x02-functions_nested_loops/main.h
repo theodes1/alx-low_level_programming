@@ -13,3 +13,6 @@ void print_to_98(int n);
 void print_times_table(int n);
 void fibonacci(void);
 int numLength(int num);
+void natural(void);
+void fibonacci_sum(void);
+void fibonacci_print_98_(void);
