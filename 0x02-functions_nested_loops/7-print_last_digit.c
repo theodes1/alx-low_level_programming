@@ -7,17 +7,18 @@
  */
 int print_last_digit(int n)
 {
-	int l;
+	int d = _abs(n % 10);
 
-	l = n % 10;
-	if (l < 0)
-	{
-		_putchar(-1 + 48);
-		return (-l);
-	}
-	else
-	{
-		_putchar(l + 48);
-		return (l);
-	}
+	_putchar(d + '0');
+	return (d);
 }
+
+/**
+ * _abs - returns the absolute value of integer
+ * @n: the integer to value absolutely
+ *
+ * Return: a positive integer or zero
+ */
+int _abs(int n)
+{
+	return (n > : 
