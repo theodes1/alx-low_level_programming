@@ -21,4 +21,5 @@ int print_last_digit(int n)
  */
 int _abs(int n)
 {
-	return (n > : 
+	return (n > 0 ? n : -n);
+}	
