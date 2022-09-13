@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_last_digit - last digit.
- * @c: variable.
- * Putchar - writes a character to stdout.
- * Return: 0 if upper, 1 if lower.
+ * print_last_digit - prints the last digit of the integer passed
+ * @n: the integer whose last digit to print
+ *
+ * Return: positive integer value of the last digit.
  */
 int print_last_digit(int n)
 {
