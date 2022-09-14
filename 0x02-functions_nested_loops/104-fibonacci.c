@@ -10,7 +10,7 @@ int numLength(int num)
 {
 	int length = 0;
 
-	if(!num)
+	if (!num)
 	{
 		return (1);
 	}
@@ -19,7 +19,7 @@ int numLength(int num)
 		num = num / 10;
 		length += 1;
 	}
-	return(length);
+	return (length);
 }
 
 /**
