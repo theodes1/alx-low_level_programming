@@ -4,19 +4,14 @@
  * _puts - check the code
  *
  * @str: pointer to the variable
- */i
+ */
 void _puts(char *str)
 {
 	int i = 0;
 
-	while (i >= 0)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == '\n');
-		{
-			_putchar('\n');
-			break;
-		}
 		_putchar(str[i]);
-		i++;
 	}
+	_putchar('\n');
 }
