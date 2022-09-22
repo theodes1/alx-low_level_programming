@@ -15,6 +15,7 @@ int main(void)
 	 * - only one statemet
 	 * - you are not allowed to code anything else than the line of expected line of code
 	 */
+
 	*(p + 5) = 98;
 	/* ...so that this print 98\n */
 	printf("a[2] = %d\n", a[2]);
