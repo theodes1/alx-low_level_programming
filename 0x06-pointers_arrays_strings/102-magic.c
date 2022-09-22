@@ -13,10 +13,9 @@ int main(void)
 	 * - you are not allow to use a
 	 * - you are not allowed to modify p
 	 * - only one statemet
-	 * - you are not allowed to code anything else than the line of expected line of code at the expected line
-	 * Your code should be written at line 19, before the ;
+	 * - you are not allowed to code anything else than the line of expected line of code
 	 */
-	p[5] = 98;
+	*(p + 5) = 98;
 	/* ...so that this print 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
