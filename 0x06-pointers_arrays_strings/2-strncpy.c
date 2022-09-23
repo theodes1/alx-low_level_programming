@@ -30,6 +30,8 @@ char *_strncpy(char *dest, char *src, int n)
 int _strlen(char *s)
 {
 	int length = 0;
+
+	while (*s != '\0')
 	{
 		length++;
 		s++;
