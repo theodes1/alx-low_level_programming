@@ -15,7 +15,6 @@ int wordCounterRec(char *str, int i)
 		return (1 + wordCounterRec(str, i + 1));
 	return (wordCounterRec(str, i + 1));
 }
-
 /**
  * word_counter - counts number of words in 1d array of strings
  * @str: pointer to char
@@ -27,7 +26,6 @@ int word_counter(char *str)
 		return (1 + wordCounterRec(str, 0));
 	return (wordCounterRec(str, 0));
 }
-
 /**
  * strtow - splits a string into words.
  * @str: string to be splitted
