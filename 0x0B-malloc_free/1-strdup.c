@@ -6,7 +6,7 @@
  * @str: pointer to dest.
  * Return: str duplicated.
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char *str2;
 	int n = 0;
