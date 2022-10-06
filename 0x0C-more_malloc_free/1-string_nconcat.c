@@ -2,50 +2,39 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - Multiplies two numbers.
- * @s1: Pointer to a first string
- * @s2: Pointer to a second string
- * @n: Variable
- * Return: Return
+ * *string_nconcat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * @n: limit of s2
+ * Return: pointer to new space in memory or null
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i = 0;
-	unsigned int u = 0;
-	unsigned int z = 0;
-	unsigned int s;
-	char *s3;
+	char *strDup;
+	int i;
+	unsigned int j;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-		s1 = "";
-	while (s2[z] != '\0')
-	{
-		z++;
-	}
-	if (z <= n)
-		n = z;
+		s2 = "";
+	i = 0;
+	while (s1[i] != '\0')
+		i++;
+	strDup = malloc(sizeof(char) * (i + n + 1));
+	if (strDup == NULL)
+		return (NULL);
+	i = j = 0;
 	while (s1[i] != '\0')
 	{
+		strDup[i] = s1[i];
 		i++;
 	}
-	s3 = malloc((i + 1 + n) * sizeof(char));
-	if (s3 == NULL)
-		return (NULL);
-	z = 0;
-	for (s = 0; s < (i + n); s++)
+	while (j < n && s2[j] != '\0')
 	{
-		if (s1[s] == '\0')
-			u = 1;
-		if (u == 0)
-			s3[s] = s1[s];
-		if (u == 1)
-		{
-			s3[s] = s2[z];
-			z++;
-		}
+		strDup[i] = s2[j];
+		i++, j++;
 	}
-	s3[n + i] = '\0';
-	return (s3);
+	strDup[i] = '\0';
+	return (strDup);
 }
