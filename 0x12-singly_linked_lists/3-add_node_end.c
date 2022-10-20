@@ -2,9 +2,9 @@
 
 /**
  * add_node_end - function that adds a new node at the end of a list_t list.
- *  * @head: pointer to the start of the list.
- *   * @str: string that contains data.
- *    * Return: NULL if it failed or address of the new element.ZZ
+ * @head: pointer to the start of the list.
+ * @str: string that contains data.
+ * Return: NULL if it failed or address of the new element.ZZ
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -38,9 +38,9 @@ list_t *add_node_end(list_t **head, const char *str)
 }
 
 /**
- *_strlen - function to count the length of a string.
+ * _strlen - function to count the length of a string.
  * @s: string.
- *  * Return: length if success.
+ * Return: length if success.
  */
 int _strlen(const char *s)
 {
