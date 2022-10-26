@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- *  function that prints a listint_t linked list.
- *  Returns: the number of nodes in the list
- *  If the function fails, exit the program with status 98
+ * print_listint_safe - prints a list
+ * @head: address of pointer to first node
+ *
+ * Return: address of head
  */
 size_t print_listint_safe(const listint_t *head)
 {
