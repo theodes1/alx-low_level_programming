@@ -13,7 +13,9 @@ size_t free_listint_safe(listint_t **h)
 	long diff;
 
 	if (!h)
+	{
 		return (0);
+	}
 	head = *h;
 	*h = NULL;
 	while (head)
